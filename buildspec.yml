@@ -1,0 +1,33 @@
+version: 0.2
+
+env:
+  git-credential-helper: yes
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+
+    commands:
+      - echo "Installing Node.js v14.16.0..."
+      - n 14.16.0
+
+      # Install node dependencies
+      # enforce that also dev deps are installed
+      - npm ci
+
+  pre_build:
+    commands:
+      # - echo "Running 'npm run lint'"
+      # - npm run lint
+
+      # - echo "Running 'npm run test'"
+      # - npm test
+
+  build:
+    commands:
+      - npm run build
+
+artifacts:
+  files:
+    - '**/*'

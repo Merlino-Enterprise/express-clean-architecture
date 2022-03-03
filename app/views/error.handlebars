@@ -1,0 +1,11 @@
+<section>
+  <h1>An error occurred</h1>
+  {{#if error}}
+    {{#if this.status}}
+      <h2>{{this.status}}</h2>
+    {{/if}}
+    {{#if this.stack}}
+      <pre>{{this.stack}}</pre>
+    {{/if}}
+  {{/if}}
+</section>

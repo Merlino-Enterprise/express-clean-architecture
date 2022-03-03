@@ -1,0 +1,61 @@
+{
+  "server": {
+    "port": 8080,
+    "cors": {
+      "origins": [
+        "http://localhost:3000",
+        "http://localhost:4200"
+      ]
+    },
+    "headers": {
+      "authToken": "x-access-token",
+      "correlationId": "x-correlation-id"
+    }
+  },
+  "database": {
+    "protocol": "mongodb+srv",
+    "host": "",
+    "port": 27017,
+    "db": "",
+    "user": "",
+    "password": "",
+    "prod": true
+  },
+  "ses": {
+    "accessKeyId": "",
+    "secretAccessKey": ""
+  },
+  "web_setting": {
+    "country": "MY"
+  },
+  "jwt": {
+    "secret": ""
+  },
+  "pusher": {
+    "appId": "",
+    "key": "",
+    "secret": "",
+    "cluster": "",
+    "useTLS": true
+  },
+  "algolia": {
+    "appId": "",
+    "apiKey": ""
+  },
+  "redis": {
+    "url": "",
+    "password": ""
+  },
+  "gcpVisionAPI": {
+    "type": "",
+    "project_id": "",
+    "private_key_id": "",
+    "private_key": "",
+    "client_email": "",
+    "client_id": "",
+    "auth_uri": "",
+    "token_uri": "",
+    "auth_provider_x509_cert_url": "",
+    "client_x509_cert_url": ""
+  }
+}
